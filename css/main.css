@@ -1,0 +1,146 @@
+:root {
+    --body-bg-color: #f2f2f2;
+    --header-bg: #fff;
+    --main-text-color: #111517;
+    --logo-img: none;
+    --logo-img-black: block;
+    --details-bg: #fff;
+}
+
+.dark {
+    --body-bg-color: #202C36;
+    --header-bg: #2B3844;
+    --main-text-color: #fff;
+    --logo-img: block;
+    --logo-img-black: none;
+    --details-bg: #202C36;
+}
+
+body {
+    background-color: var(--body-bg-color)
+}
+
+header {
+    background-color: var(--header-bg);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.logo-white {
+    display: var(--logo-img);
+}
+
+.logo-black {
+    display: var(--logo-img-black);
+}
+
+a {
+    text-decoration: none;
+}
+
+.dark-button::before {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: -3px;
+    width: 17px;
+    height: 17px;
+    background-image: url('../images/dark-mode.svg');
+    content: '';
+}
+
+.mode-btn {
+    color: var(--main-text-color);
+}
+
+.input-search {
+    background-image: url('../images/icon-search-black.svg');
+    background-repeat: no-repeat;
+    background-position: calc(0% + 20px) center;
+    background-color: var(--header-bg);
+    border: none;
+}
+
+.input-search::placeholder {
+    color: var(--main-text-color);
+}
+
+.form-select {
+    background-color: var(--header-bg);
+    color: var(--main-text-color);
+    border: none;
+}
+
+.card {
+    background-color: var(--header-bg);
+}
+
+li {
+    color: var(--main-text-color);
+}
+
+.css-title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--main-text-color);
+}
+
+
+.details-body {
+    background-color: var(--details-bg);
+}
+
+.link {
+    margin: 80px 0;
+    color: var(--main-text-color);
+}
+
+.css-link::before {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -2px;
+    width: 15px;
+    height: 13px;
+    background-image: url('../images/Shape.svg');
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.details-title {
+    color: var(--main-text-color);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+strong {
+    color: var(--main-text-color);
+}
+
+.css-btn {
+    font-weight: 300;
+    font-size: 14px;
+    background-color: var(--header-bg);
+    color: var(--main-text-color);
+}
+
+
+@media only screen and (max-width:576px) {
+    .border-cont {
+        display: block;
+    }
+
+    .css-width {
+        width: 100%!important;
+    }
+
+    .css-div {
+        flex-direction: column;
+        align-items: start!important;
+    }
+
+    .css-divtwo {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+}
